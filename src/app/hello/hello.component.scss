@@ -15,15 +15,6 @@
 
       span {
         color: #5800FF;
-        animation: color-change 2s infinite;
-        
-        @keyframes color-change {
-          0% { color: #A62639; }
-          25% { color: #5EFC8D; }
-          50% { color: #49B6FF; }
-          74% { color: #E85F5C; }
-          100% { color: #22007C; }
-        }
       }
     }
 
@@ -44,6 +35,16 @@
         color: #290172;
       }
     }
+
+    @media only screen and (max-width: 600px) {
+      h2 {
+        font-size: 30px;
+      }
+
+      box-shadow: #ededed 3px 3px 10px 1px;
+      margin-top: 100px;
+      padding: 40px;
+    }
   }
 
   .image-container {
@@ -56,6 +57,18 @@
       border: solid 4px #ededed;
       box-shadow: #d4d4d4 5px 5px 70px 5px;
     }
-    
+
+    @media only screen and (max-width: 600px) {
+      margin-left: 0px;
+      position: absolute;
+
+      img {
+        width: 100px;
+        border: solid 20px #ffffff;
+        border-radius: 50%;
+        box-shadow: none;
+      }  
+    }
+  
   }
 }
